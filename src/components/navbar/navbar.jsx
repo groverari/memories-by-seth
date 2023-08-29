@@ -33,7 +33,7 @@ function NavBar() {
           </Button>
         </div>
         <div className="links-container">
-          <Link className="navbar-link">
+          <Link className="navbar-link" to="/home">
             <p>Home</p>
           </Link>
           <Link className="navbar-link">
@@ -56,6 +56,8 @@ function NavBar() {
             <label>Email:</label>
             <input type="text" />
             <br />
+            <label>Phone:</label>
+            <input type="phone"></input>
             <label>Describe Your Request: </label>
             <br />
             <input type="textarea" />
