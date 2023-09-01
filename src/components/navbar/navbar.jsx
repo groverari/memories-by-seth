@@ -33,14 +33,17 @@ function NavBar() {
           </Button>
         </div>
         <div className="links-container">
-          <Link className="navbar-link">
-            <p>Home</p>
+          <Link className="navbar-link" path="/home">
+            Home
           </Link>
-          <Link className="navbar-link">
-            <p>Services</p>
+          <Link className="navbar-link" path="/services">
+            Services
           </Link>
-          <Link className="navbar-link">
-            <p>Gallery</p>
+          <Link className="navbar-link" path="/gallery">
+            Gallery
+          </Link>
+          <Link className="navbar-link" path="/about">
+            About
           </Link>
         </div>
       </div>
