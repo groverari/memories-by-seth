@@ -5,6 +5,7 @@ import NavBar from './components/navbar/navbar'
 import Home from './pages/home/home'
 import Gallery from './pages/gallery/gallery'
 import Services from './pages/services.jsx/services'
+import About from './pages/about/about'
 
 function App() {
   return (

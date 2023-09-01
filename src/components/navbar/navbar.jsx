@@ -59,6 +59,8 @@ function NavBar() {
             <label>Email:</label>
             <input type="text" />
             <br />
+            <label>Phone:</label>
+            <input type="phone"></input>
             <label>Describe Your Request: </label>
             <br />
             <input type="textarea" />
