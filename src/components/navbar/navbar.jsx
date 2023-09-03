@@ -20,7 +20,7 @@ function NavBar() {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
   return (
-    <div>
+    <div className='nav'>
       <div className="header">
         <div className="site-title-wrapper">
           <h1 className="site-title">Memories By Seth</h1>
@@ -33,16 +33,16 @@ function NavBar() {
           </Button>
         </div>
         <div className="links-container">
-          <Link className="navbar-link" path="/home">
+          <Link className="navbar-link" to="/home">
             Home
           </Link>
-          <Link className="navbar-link" path="/services">
+          <Link className="navbar-link" to="/services">
             Services
           </Link>
-          <Link className="navbar-link" path="/gallery">
+          <Link className="navbar-link" to="/gallery">
             Gallery
           </Link>
-          <Link className="navbar-link" path="/about">
+          <Link className="navbar-link" to="/about">
             About
           </Link>
         </div>

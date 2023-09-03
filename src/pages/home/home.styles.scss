@@ -1,12 +1,11 @@
 $optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;
 
+.options{
+  margin: auto;
+}
+
 body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 100vh;
+  
 
   font-family: 'Roboto', sans-serif;
   transition: 0.25s;
@@ -23,8 +22,9 @@ body {
     align-items: stretch;
     overflow: hidden;
 
-    min-width: 600px;
-    max-width: 900px;
+    min-width: 20%;
+    max-width: 90%;
+    
     width: calc(100% - 100px);
 
     height: 400px;
