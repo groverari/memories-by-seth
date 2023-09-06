@@ -42,10 +42,7 @@ function NavBar() {
           <Link className="navbar-link" to="/gallery">
             Gallery
           </Link>
-          <Link className="navbar-link" to="/about">
-            About
-          </Link>
-        </div>
+          </div>
       </div>
       <Modal
         open={open}

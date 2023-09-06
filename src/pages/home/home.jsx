@@ -10,107 +10,27 @@ function Home() {
   const [isShown4, setShown4] = useState(false)
 
   return (
-    <div className="options">
-      <div
-        className={classNames('option', { active: isShown })}
-        onMouseEnter={() => {
-          setShown(true)
-        }}
-        onMouseLeave={() => {
-          setShown(false)
-        }}
-      >
-        <div className="shadow"></div>
-        <div className="label">
-          <div className="icon">
-            <i className="fas fa-walking"></i>
-          </div>
-          <div className="info">
-            <div className="main">Blonkisoaz</div>
-            <div className="sub">Omuke trughte a otufta</div>
-          </div>
+    <div className='home'>
+      <div className='picWheel'>
+        <div className='pic'>
+            
+            
+            
         </div>
       </div>
-      <div
-        className={classNames('option', { active: isShown1 })}
-        onMouseEnter={() => {
-          setShown1(true)
-        }}
-        onMouseLeave={() => {
-          setShown1(false)
-        }}
-      >
-        <div className="shadow"></div>
-        <div className="label">
-          <div className="icon">
-            <i className="fas fa-snowflake"></i>
-          </div>
-          <div className="info">
-            <div className="main">Oretemauw</div>
-            <div className="sub">Omuke trughte a otufta</div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={classNames('option', { active: isShown2 })}
-        onMouseEnter={() => {
-          setShown2(true)
-        }}
-        onMouseLeave={() => {
-          setShown2(false)
-        }}
-      >
-        <div className="shadow"></div>
-        <div className="label">
-          <div className="icon">
-            <i className="fas fa-tree"></i>
-          </div>
-          <div className="info">
-            <div className="main">Iteresuselle</div>
-            <div className="sub">Omuke trughte a otufta</div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={classNames('option', { active: isShown3 })}
-        onMouseEnter={() => {
-          setShown3(true)
-        }}
-        onMouseLeave={() => {
-          setShown3(false)
-        }}
-      >
-        <div className="shadow"></div>
-        <div className="label">
-          <div className="icon">
-            <i className="fas fa-tint"></i>
-          </div>
-          <div className="info">
-            <div className="main">Idiefe</div>
-            <div className="sub">Omuke trughte a otufta</div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={classNames('option', { active: isShown4 })}
-        onMouseEnter={() => {
-          setShown4(true)
-        }}
-        onMouseLeave={() => {
-          setShown4(false)
-        }}
-      >
-        <div className="shadow"></div>
-        <div className="label">
-          <div className="icon">
-            <i className="fas fa-sun"></i>
-          </div>
-          <div className="info">
-            <div className="main">Inatethi</div>
-            <div className="sub">Omuke trughte a otufta</div>
-          </div>
-        </div>
-      </div>
+    <div className='About'>
+    <p>
+        Welcome to my website! My name is Seth, and I'm a photographer based in Puyallup Washington. I specialize in capturing your memories.
+
+Photography has been a passion of mine for as long as I can remember. I love being able to freeze moments in time and share them with others. Whether I'm exploring a new city or hiking in the mountains, I always have my camera by my side.
+
+As a photographer, I strive to create images that are not only visually stunning, but also evoke emotion and tell a story. I believe that every photo should have a purpose, whether it's to inspire, educate, or simply bring a smile to someone's face.
+
+I have a deep admiration for the art of film photography. There's something truly special about capturing and developing images that can't be replicated with digital technology. The process of composing a shot, carefully adjusting the exposure, and finally seeing the results on film is incredibly rewarding. I believe that film photography adds a unique character and aesthetic that digital photos simply can't match.
+
+Thank you for taking the time to visit my website and view my work. If you're interested in scheduling a photo session, please don't hesitate to contact me. I look forward to hearing from you!
+        </p>
+    </div>
     </div>
   )
 }
