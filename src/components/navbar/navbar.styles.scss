@@ -1,18 +1,27 @@
-.nav{
-  margin: 10px;
+.nav {
+  margin-bottom: 10px;
 }
-.header{
-  top:0 px;
-
+.header {
+  top: 0 px;
+  background-color: #fff3da;
 }
 .site-title {
   text-align: center;
+  margin: 0;
+  font-size: 60px;
+  padding: 20px;
 }
+
 .links-container {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    column-gap: 5px;
+    font-size: 15px;
+  }
 }
 .navbar-link {
   text-decoration: none;
@@ -20,20 +29,22 @@
   color: black;
   width: 20%;
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   border-radius: 12px;
   border: 2px solid black;
   transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out,
     color 0.2s ease-in-out;
   &:hover {
     scale: 1.2;
-    background-color: rgba(0, 0, 255, 0.7);
+    background-color: #dfccfb;
     border: none;
     color: white;
   }
 }
-.contact-btn {
-  margin: 10px;
+.contact-btn > p {
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+  }
 }
 .contact-modal {
   position: absolute;
@@ -45,4 +56,23 @@
   border: 2px solid #000;
   box-shadow: 24;
   padding: 4px;
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  textarea {
+    width: 90%;
+    height: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
 }

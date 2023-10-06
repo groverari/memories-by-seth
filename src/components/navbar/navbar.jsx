@@ -20,17 +20,10 @@ function NavBar() {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
   return (
-    <div className='nav'>
+    <div className="nav">
       <div className="header">
         <div className="site-title-wrapper">
           <h1 className="site-title">Memories By Seth</h1>
-          <Button
-            className="contact-btn"
-            onClick={handleOpen}
-            variant="outlined"
-          >
-            Contact Me
-          </Button>
         </div>
         <div className="links-container">
           <Link className="navbar-link" to="/home">
@@ -42,7 +35,15 @@ function NavBar() {
           <Link className="navbar-link" to="/gallery">
             Gallery
           </Link>
-          </div>
+
+          <Button
+            className="contact-btn"
+            onClick={handleOpen}
+            variant="outlined"
+          >
+            <p>Contact Me</p>
+          </Button>
+        </div>
       </div>
       <Modal
         open={open}
@@ -50,23 +51,29 @@ function NavBar() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className="contact-modal">
           <h1>Contact Me</h1>
           <form>
-            <label>Email:</label>
-            <input type="text" />
-            <br />
-            <label>Phone:</label>
-            <input type="phone"></input>
-            <label>Describe Your Request: </label>
-            <br />
-            <input type="textarea" />
-            <br />
+            <div className="form-group">
+              <label>Email:</label>
+              <input type="text" />
+            </div>
+
+            <div className="form-group">
+              <label>Phone:</label>
+              <input type="phone"></input>
+            </div>
+
+            <div>
+              <label>Describe Your Request: </label>
+              <textarea />
+            </div>
+
             <input type="submit" />
           </form>
         </Box>
       </Modal>
-      <Outlet />
+      <Outlet className="content" />
     </div>
   )
 }

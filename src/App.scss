@@ -1,5 +1,37 @@
- html, body{
-    min-width: 100%;
-    margin: 0; 
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff3da;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./Assets/camera-background.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media only screen and (max-width: 600px) {
+    background-repeat: repeat-y;
+  }
+}
+
+.page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 65px;
+}
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.36);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
 }
