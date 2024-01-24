@@ -1,0 +1,34 @@
+.back {
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  @media only screen and (min-width: 600px) {
+    background-image: url("../../assets/couple_pics/IMG_0864.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media only screen and (max-width: 600px) {
+    background-image: url("../../assets/couple_pics/cartoon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.title-wrapper {
+  margin-right: 29px;
+}
