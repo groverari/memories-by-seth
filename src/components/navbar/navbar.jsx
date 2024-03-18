@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './navbar.styles.scss'
+import sendEmail from '../mailer/mailer'
 import { Button, Modal, Box } from '@mui/material'
 
 const style = {
@@ -19,6 +20,8 @@ function NavBar() {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
+
+  useEffect(() => ({sendEmail('Hello Seth, this is a test email.', 'Alice');}))
   return (
     <div className="nav">
       <div className="header">
