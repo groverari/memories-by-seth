@@ -1,12 +1,16 @@
-const nodemailer = require('nodemailer')
+/**
+ * Future implementation if needed
+ */
+
+//const nodemailer = require('nodemailer')
 
 async function sendEmail(text, name) {
   // Create a transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'arieshgrover12@gmail.com',
-      pass: 'Grover99!' // You should use environment variables or another secure method to handle passwords
+      user: 'email',
+      pass: 'password' // You should use environment variables or another secure method to handle passwords
     }
   })
 

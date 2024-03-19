@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './navbar.styles.scss'
-import sendEmail from '../mailer/mailer'
+//import sendEmail from '../mailer/mailer'
 import { Button, Modal, Box } from '@mui/material'
 
 const style = {
@@ -20,8 +20,6 @@ function NavBar() {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
-
-  useEffect(() => ({sendEmail('Hello Seth, this is a test email.', 'Alice');}))
   return (
     <div className="nav">
       <div className="header">
@@ -56,24 +54,7 @@ function NavBar() {
       >
         <Box className="contact-modal">
           <h1>Contact Me</h1>
-          <form>
-            <div className="form-group">
-              <label>Email:</label>
-              <input type="text" />
-            </div>
-
-            <div className="form-group">
-              <label>Phone:</label>
-              <input type="phone"></input>
-            </div>
-
-            <div>
-              <label>Describe Your Request: </label>
-              <textarea />
-            </div>
-
-            <input type="submit" />
-          </form>
+          <h2>Seth's Phone Number here</h2>
         </Box>
       </Modal>
       <Outlet className="content" />
